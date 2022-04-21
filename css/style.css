@@ -357,6 +357,7 @@ footer{
   padding: 6px 15px;
   border-radius: 50px;
   text-decoration: none;
+  white-space: nowrap;
 }
 .footer-menu ul li a:hover{
   color: #27bcda;
