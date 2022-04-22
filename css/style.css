@@ -362,7 +362,136 @@ footer{
 .footer-menu ul li a:hover{
   color: #27bcda;
 }
+/***** Listings Page ******/
+.bg-white {
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.bg-white .nav-links li a {
+  color: #333;
+}
+.bg-white .register-btn {
+  background: #ff5361;
+  color: #fff;
+}
+.bg-white .fa-bars {
+  color: #333;
+}
+.bg-white .active::after {
+  background: #ff5361;
+}
+.list-container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.left-col {
+  flex-basis: 70%;
+}
+.right-col {
+  flex-basis: 25%;
+}
+.left-col h1 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.vehicle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
 
+.vehicle-img {
+  flex-basis: 40%;
+}
+.vehicle-info {
+  flex-basis: 58%;
+  color: #555;
+}
+.vehicle-img img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.vehicle-info h3 {
+  font-weight: 600;
+  color: #333;
+  font-size: 22px;
+  margin: 4px 0;
+}
+.vehicle-info p.location {
+  margin-top: 10px;
+}
+
+.vehicle-price {
+  text-align: right;
+}
+.vehicle-price h4 {
+  font-size: 20px;
+}
+.right-col .sidebar {
+  border: 1px solid #999;
+  padding: 20px 30px;
+  margin-top: 30px;
+}
+
+.sidebar h2 {
+  font-weight: 500;
+}
+.sidebar .heading {
+  width: 100%;
+  display: block;
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+  margin: 0;
+}
+.sidebar h3 {
+  font-weight: 500;
+  margin: 20px 0 10px;
+}
+.sidebar .filter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #555;
+}
+.sidebar .filter p {
+  flex: 1;
+}
+
+.sidebar .filter input {
+  margin-right: 15px;
+  cursor: pointer;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.pagination .fa-chevron-circle-left,
+.pagination .fa-chevron-circle-right {
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+}
+.pagination span {
+  margin: 10px 8px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 30px;
+}
+.pagination span.active {
+  background: #ff5361;
+  color: #fff;
+}
 
 @media screen and (max-width: 700px) {
   .logo {
@@ -444,6 +573,24 @@ footer{
   }
   .about-msg {
     font-size: 15px;
+  }
+
+/**** Listing Page ****/
+  .list-container {
+    margin-top: 150px;
+  }
+  .left-col, .right-col, .vehicle-img, .vehicle-info {
+    flex-basis: 100%;
+  }
+  .left-col h1 {
+    font-size: 22px;
+  }
+  .vehicle-info h3 {
+    font-size: 18px;
+  }
+  .pagination span {
+    margin: 10px 2px;
+    font-size: 12px;
   }
 }
 @media (max-width:500px) {

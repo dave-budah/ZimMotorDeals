@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Motor Dealers</title>
+    <meta name="description" content="A simple HTML5 Template for new projects.">
+    <meta name="author" content="SitePoint">
+
+    <meta property="og:title" content="A Basic HTML5 Template">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com">
+    <meta property="og:description" content="A simple HTML5 Template for new projects.">
+    <meta property="og:image" content="image.png">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.all.min.css">
+<body>
+<nav id="navbar" class="bg-white">
+    <img src="images/logos/logo.png" alt="" class="logo">
+    <ul class="nav-links">
+        <li><a href="" class="active">Car Sales</a></li>
+        <li><a href="listings.html">Car Rentals</a></li>
+        <li><a href="">AutoParts</a></li>
+        <li><a href="">Directory</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+
+    <div>
+        <a href="" class="register-btn">Login</a>
+        <a href="" class="register-btn">Register</a>
+    </div>
+    <span class="fa fa-bars" onclick="toggleBtn()"></span>
+</nav>
+
+
+<div class="container">
+    <div class="list-container">
+        <div class="left-col">
+            <p>200+ Options</p>
+            <h1>All vehicles available</h1>
+            <div class="vehicle">
+                <div class="vehicle-img">
+                    <img src="images/cars/fofo.jpg" alt="">
+                </div>
+                <div class="vehicle-info">
+                    <p>New</p>
+                    <h3>Ford Raptor G2 | 2021</h3>
+                    <p>Switchable Transmission | Diesel</p>
+                    <p class="location"><i class="fa fa-map-marker"></i> Harare</p>
+                    <div class="vehicle-price">
+                        <p>Fixed Price</p>
+                        <h4>$78 0000</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vehicle">
+                <div class="vehicle-img">
+                    <img src="images/cars/c.jpg" alt="">
+                </div>
+                <div class="vehicle-info">
+                    <p>Preloved</p>
+                    <h3>Range Rover | 2017</h3>
+                    <p>Manual | Petrol</p>
+                    <p class="location"><i class="fa fa-map-marker"></i> Harare</p>
+                    <div class="vehicle-price">
+                        <p>Fixed Price</p>
+                        <h4>$22 0000</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vehicle">
+                <div class="vehicle-img">
+                    <img src="images/cars/b.jpg" alt="">
+                </div>
+                <div class="vehicle-info">
+                    <p>New</p>
+                    <h3>Audi | 2020</h3>
+                    <p>Automatic | Petrol</p>
+                    <p class="location"><i class="fa fa-map-marker"></i> Harare</p>
+                    <div class="vehicle-price">
+                        <p>Fixed Price</p>
+                        <h4>$26 0000</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vehicle">
+                <div class="vehicle-img">
+                    <img src="images/cars/dan.jpg" alt="">
+                </div>
+                <div class="vehicle-info">
+                    <p>Preloved</p>
+                    <h3>Citron | 2005</h3>
+                    <p>Manual | Diesel</p>
+                    <p class="location"><i class="fa fa-map-marker"></i> Bulawayo</p>
+                    <div class="vehicle-price">
+                        <p>Negotiable Price</p>
+                        <h4>$3500</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-col">
+            <div class="sidebar">
+               <div class="heading">
+                   <h2>Select Filters</h2>
+               </div>
+                <h3>Vehicle Type</h3>
+                <div class="filter">
+                    <input type="checkbox" name=""> <p>Passenger Car</p> <span>(0)</span>
+                </div>
+                <div class="filter">
+                    <input type="checkbox" name=""> <p>Truck</p> <span>(0)</span>
+                </div>
+                <div class="filter">
+                    <input type="checkbox" name=""> <p>Bus</p> <span>(0)</span>
+                </div>
+                <div class="filter">
+                    <input type="checkbox" name=""> <p>Mortorcycle</p> <span>(0)</span>
+                </div>
+                <div class="filter">
+                    <input type="checkbox" name=""> <p>Earth Moving</p> <span>(0)</span>
+                </div>
+
+                <h3>Transmission</h3>
+                <div class="filter">
+                    <input type="checkbox" name=""> <p>Automatic</p> <span>(0)</span>
+                </div>
+                <div class="filter">
+                    <input type="checkbox" name=""> <p>Manual</p> <span>(0)</span>
+                </div>
+                <div class="filter">
+                    <input type="checkbox" name=""> <p>Switchable</p> <span>(0)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pagination">
+        <span class="fa fa-chevron-circle-left"></span>
+        <span class="active">1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>&middot; &middot; &middot;</span>
+        <span>15</span>
+        <span class="fa fa-chevron-circle-right"></span>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-content">
+        <h3>Car Dealers</h3>
+        <p>We are a dedicated team that seeks to help people from different walks of life through technology..</p>
+        <ul class="socials">
+            <li><a href="#" style="padding: 5px 8px;"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" style="padding: 5px 7px;"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <div class="footer-menu">
+            <ul class="f-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="listings.html">Car Sales</a></li>
+                <li><a href="">Car rental</a></li>
+                <li><a href="">Autoparts</a></li>
+                <li><a href="">Articles</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script>
+            Selvigtech, All Rights Reserved
+        </p>
+    </div>
+
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/fontawesome.min.js"></script>
+</body>
+</html>
